@@ -30,19 +30,22 @@ The application should connect to the default server port (3042) automatically!
 
 _Hint_ - Use [nodemon](https://www.npmjs.com/package/nodemon) instead of `node` to automatically restart the server on any changes.
 
-### Work done
+## Work done
 
-## The objectif
+### The objectif
 
 The goal was to add a simple authentication system with Elliptic Curve Digital Signatures as Public Key Cryptography.
 
-## Result
+### Result
 
 First, I added a script to test and create users:
+
 `node server/scripts/generate.js`
 
 Then 3 users were add to the project with their private key, public key, address (20 last bit of public key). To list them you can use:
+
 `node server/scripts/users.js`
+
 You will also see a message and a signature of this message. 
 
 Now the server is checking that you are the good user because you have to provide both the address AND a digital signature of a message (the message is hard coded in the code: "Hey, it's me."). The server will:
