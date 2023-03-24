@@ -32,7 +32,7 @@ _Hint_ - Use [nodemon](https://www.npmjs.com/package/nodemon) instead of `node` 
 
 ## Work done
 
-### The objectif
+### The objective
 
 The goal was to add a simple authentication system with Elliptic Curve Digital Signatures as Public Key Cryptography.
 
